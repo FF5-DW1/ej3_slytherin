@@ -18,16 +18,6 @@ function CardList() {
 
       </div>
       <hr />
-      <h3>List 1</h3>
-      <div className="newTask">
-        <input
-          type="text"
-          className="nameTask"
-          id="inputTask"
-          placeholder="Name Task"
-        />
-        <button className="btnnewTask">New Task</button>
-      </div>
     </section>
   );
 }
