@@ -1,0 +1,22 @@
+.card {
+    width: 500px;
+}
+
+.newList {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nameList {
+    width: 75%;
+    height: 42px;
+    border-radius: 5px;
+    background-color: slategray;
+}
+
+.btnnewList {
+    width: 22%;
+    background-color: slategray;
+}
