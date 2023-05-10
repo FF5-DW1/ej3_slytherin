@@ -6,6 +6,7 @@ function CardList() {
   return (
     <section className="card">
       <h1>To Do List</h1>
+      
       <div className="newList">
         <input
           type="text"
@@ -14,6 +15,7 @@ function CardList() {
           placeholder="Name List"
         />
         <BotonList />
+
       </div>
       <hr />
     </section>
