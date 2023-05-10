@@ -1,7 +1,7 @@
 import React from "react";
 
 function BotonList() {
-  return <div> BotonList</div>;
+  return <button className="btnnewList">New List</button>;
 }
 
 export default BotonList;
