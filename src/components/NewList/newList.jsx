@@ -7,6 +7,7 @@ function NewList() {
     <section className="card">
       <h3>List 1</h3>
       <div className="newTask">
+      
         <input
           type="text"
           className="nameTask"
