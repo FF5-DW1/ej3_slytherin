@@ -15,7 +15,7 @@ function CardList() {
           placeholder="Name List"
         />
         <BotonList />
->>>>>>> develop
+
       </div>
       <hr />
       <h3>List 1</h3>
