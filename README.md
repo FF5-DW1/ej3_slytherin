@@ -1,2 +1,3 @@
 # ej3_slytherin
-proyecto para crear lista de tareas.
+Proyecto con React para crear lista de tareas TODO. 
+Equipo: Olga, Víctor, Jesús, Ivón, Anderson.

@@ -1,9 +1,12 @@
 import React from "react";
-import './botonTask.css'
+import "./botonTask.css";
 
 function BotonTask() {
-  return <button className="btnnewTask">New Task</button>;
-  
+  return (
+    <button className="btnnewTask" type="submit">
+      New Task
+    </button>
+  );
 }
 
 export default BotonTask;
