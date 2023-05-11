@@ -1,10 +1,14 @@
 .card {
     width: 500px;
+    background-color: #f2f2f2;
+    /* padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;  */
 }
 
 .newTask {
     width: 500px;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     align-items: center;
 }
@@ -23,3 +27,67 @@
 #inputTask::placeholder{
     color: white;
 }
+
+
+
+
+
+/* newList.css */
+/* .card {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+   */
+  /* .listTitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  } */
+  
+  /* .titleInput {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+  } */
+  
+  /* .clearTitleButton {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+  } */
+  
+  /* .newTask {
+    display: flex;
+    margin-bottom: 10px;
+  }
+   */
+  /* .nameTask {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+  } */
+  
+  /* ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+    cursor: pointer;
+  } */
+  
+  /* .completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+   */
