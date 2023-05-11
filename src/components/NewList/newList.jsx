@@ -24,9 +24,9 @@ function NewList(props) {
     setSortedTasks(sorted);
   };
 
-  useEffect(() => {
+  /*useEffect(() => {
     sortTasks();
-  }, [tasks]);
+  }, [tasks]);*/
 
   const handleTaskToggle = (index) => {
     const updatedTasks = [...tasks];
