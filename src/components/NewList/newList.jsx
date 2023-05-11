@@ -1,58 +1,3 @@
-/*import React, { useState } from "react";
-import "./newList.css";
-
-function NewList(props) {
-  const [tasks, setTasks] = useState([]);
-  const [newTask, setNewTask] = useState("");
-
-  const handleInputChange = (e) => {
-    setNewTask(e.target.value);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (newTask.trim() !== "") {
-      setTasks([...tasks, newTask]);
-      setNewTask("");
-    }
-  };
-
-  return (
-    <section>
-      <hr />
-      <h3>{props.title}</h3>
-        <form onSubmit={handleSubmit} className="newTask">
-          <input
-            type="text"
-            className="nameTask"
-            id="inputTask"
-            placeholder="Name Task"
-            value={newTask}
-            onChange={handleInputChange}
-          />
-         <button className="btnnewTask">New Task</button> 
-          { <button type="submit">Add Task</button>  }
-        </form>
-      <ul>
-        {tasks.map((task, index) => (
-          <li key={index}>{task}</li>
-        ))}
-      </ul>
-    </section>
-  );
-}
-
-export default NewList;*/
-
-
-
-
-
-
-
-
-
-
 import React, { useState, useEffect } from "react";
 import "./newList.css";
 import BotonTask from "../BotonTask/botonTask";
@@ -125,7 +70,7 @@ function NewList(props) {
     
       </ul>
     </section>
-  );
+  )
 }
 
 export default NewList;
