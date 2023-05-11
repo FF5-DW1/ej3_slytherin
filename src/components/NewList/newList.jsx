@@ -44,7 +44,7 @@ function NewList(props) {
     <section className="card">
       <h3>{props.title}</h3>
       <div className="newTask">
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="formulario">
           <input
             type="text"
             className="nameTask"
