@@ -61,16 +61,15 @@ function NewList(props) {
       <ul>
         {sortedTasks.map((task, index) => (
           <li key={index} className={task.completed ? "completed" : ""}>
-      
             <span onClick={() => handleTaskToggle(index)}>{task.name}</span>
-            <button className="delete" onClick={() => handleTaskDelete(index)}>x</button>
-        
+            <button className="delete" onClick={() => handleTaskDelete(index)}>
+              x
+            </button>
           </li>
         ))}
-    
       </ul>
     </section>
-  )
+  );
 }
 
 export default NewList;
