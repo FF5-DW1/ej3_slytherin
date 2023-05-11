@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./newList.css";
 
-function NewList() {
+function NewList(props) {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
 
@@ -20,7 +20,7 @@ function NewList() {
   return (
     <section>
       <hr />
-      <h3>List 1</h3>
+      <h3>{props.title}</h3>
         <form onSubmit={handleSubmit} className="newTask">
           <input
             type="text"
