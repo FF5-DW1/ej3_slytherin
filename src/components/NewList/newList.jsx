@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./newList.css";
-import BotonTask from "../BotonTask/botonTask";
 
 function NewList() {
   const [tasks, setTasks] = useState([]);
@@ -19,10 +18,10 @@ function NewList() {
   };
 
   return (
-    <section className="card">
+    <section>
+      <hr />
       <h3>List 1</h3>
-      <div className="newTask">
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="newTask">
           <input
             type="text"
             className="nameTask"
@@ -35,9 +34,6 @@ function NewList() {
          <button className="btnnewTask">New Task</button> 
           {/* <button type="submit">Add Task</button>  */}
         </form>
-       
-      </div>
-
       <ul>
         {tasks.map((task, index) => (
           <li key={index}>{task}</li>

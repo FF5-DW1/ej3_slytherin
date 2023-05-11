@@ -1,25 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./cardList.css";
-import BotonList from "../BotonList/botonList";
+import NewList from "../NewList/newList";
 
 function CardList() {
   return (
     <section className="card">
       <h1>To Do List</h1>
-      
-      <div className="newList">
+      <form className="newList">
         <input
           type="text"
           className="nameList"
           id="inputList"
           placeholder="Name List"
         />
-        <BotonList />
-
-      </div>
-      <hr />
+        <button className="btnnewList">New List</button>;
+      </form>
+      <NewList />
     </section>
-  );
+  )
 }
 
 export default CardList;
