@@ -18,6 +18,12 @@ function CardList() {
     }
   };
 
+  const handleListDelete = (index) => {
+    const updatedLists = [...lists];
+    updatedLists.splice(index, 1);
+    setLists(updatedLists);
+  };
+
   return (
     <section className="card">
       <h1>To Do List</h1>
@@ -34,7 +40,12 @@ function CardList() {
       </form>
       <ul className="cardsList">
         {lists.map((list, index) => (
-          <NewList key={index} id={index} title={list} />
+          <NewList
+            key={index}
+            index={index}
+            title={list}
+            handleListDelete={handleListDelete}
+          />
         ))}
       </ul>
     </section>
@@ -42,3 +53,7 @@ function CardList() {
 }
 
 export default CardList;
+
+
+
+
