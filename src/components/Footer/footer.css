@@ -4,9 +4,9 @@ a {
 }
 .copyright {
   font-size: larger;
-  width: 1300px;
+  width: 1500px;
   margin-top: 50px;
   display: flex;
   justify-content: space-around;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
