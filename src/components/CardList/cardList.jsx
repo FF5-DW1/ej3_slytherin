@@ -28,17 +28,17 @@ function CardList() {
           id="inputList"
           placeholder="Name List"
           value={newList}
-            onChange={handleInputChange}
+          onChange={handleInputChange}
         />
-        <button className="btnnewList">New List</button>;
+        <button className="btnnewList">New List</button>
       </form>
-      <ul>
+      <ul className="cardsList">
         {lists.map((list, index) => (
           <NewList key={index} id={index} title={list} />
         ))}
       </ul>
     </section>
-  )
+  );
 }
 
 export default CardList;

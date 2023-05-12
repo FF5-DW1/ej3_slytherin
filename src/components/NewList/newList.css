@@ -1,55 +1,87 @@
-.newTask {
-  width: 500px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+* {
+    cursor: url(/src/assets/img/barita-removebg-preview.png), auto;
 }
+
+.cardTask {
+    margin: 10px;
+    background-image: linear-gradient(to bottom, #1e5d1f, rgba(90, 207, 89, 0.6));
+    border-radius: 15px;
+}
+
+.newTask {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .formulario {
-  display: flex;
-  width: 100%;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .nameTask {
-  width: 75%;
-  height: 42px;
-  border-radius: 5px;
-  background-color: slategray;
-  display: flex;
+    width: 60%;
+    height: 42px;
+    border-radius: 5px;
+    display: flex;
+    color: #34b433;
+    padding-left: 3%;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+}
+
+.nameTask::placeholder {
+    color: #34b433;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.taskname {
+    margin: 0.6rem 0;
 }
 
 #inputTask {
-  color: white;
+    color: white;
 }
 
 #inputTask::placeholder {
-  color: white;
+    color: white;
 }
 
 ul {
-  list-style: none;
-  padding: 0;
-  background-color: aquamarine;
-  margin-top: 15px;
-  width: 100%;
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 7px;
 }
 
 li {
-  display: flex;
-  margin-bottom: 5px;
-  cursor: pointer;
-  font-size: 25px;
-  font-family: monospace;
-  justify-content: space-between;
-
-  /* background-color: blue; */
+    display: flex;
+    cursor: pointer;
+    font-size: 20px;
+    justify-content: space-between;
+    padding: 0 4rem;
+    align-items: baseline;
 }
+
 .delete {
-  background-color: coral;
-  margin-top: 4px;
-  padding-block: 2px;
+    margin: 0.4rem;
+    padding-block: 2px;
+    align-items: center;
+    /* width: 22%; */
+    background-image: linear-gradient(to right, #5acf59, #228b22);
+    box-shadow: 2px 2px #207521;
+    margin-left: 5px;
 }
 
 .completed span {
-  text-decoration: line-through;
-  background-color: rgb(194, 114, 130);
+    text-decoration: line-through;
+    color: #5acf59;
+    text-shadow: 2px 2px #1e5d1f;
+    font-weight: bold;
 }
