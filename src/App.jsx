@@ -1,11 +1,12 @@
 import "./App.css";
 import CardList from "./components/CardList/cardList";
-import NewList from "./components/NewList/newList";
+import Footer from "./components/Footer/footer";
 
 function App() {
   return (
     <>
       <CardList />
+      <Footer />
     </>
   );
 }

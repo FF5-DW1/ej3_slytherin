@@ -1,0 +1,12 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+.copyright {
+  font-size: larger;
+  width: 1300px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
