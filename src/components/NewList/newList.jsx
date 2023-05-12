@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./newList.css";
 import BotonTask from "../BotonTask/botonTask";
 
+
 function NewList(props) {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
@@ -39,7 +40,7 @@ function NewList(props) {
     updatedTasks.splice(index, 1);
     setTasks(updatedTasks);
   };
-
+  
   return (
     <section className="cardTask">
       <h3 className="taskname">{props.title}</h3>
@@ -54,6 +55,9 @@ function NewList(props) {
             onChange={handleInputChange}
           />
           <BotonTask />
+          <button className="delete" onClick={() => props.handleListDelete(props.index)}>
+            Delete
+          </button>
         </form>
       </div>
 
