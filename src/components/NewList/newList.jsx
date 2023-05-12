@@ -19,23 +19,23 @@ function NewList(props) {
     }
   };
 
+  useEffect(() => {
+    sortTasks();
+  }, [tasks]);
+
   const sortTasks = () => {
     const sorted = [...tasks].sort((a, b) => a.name.localeCompare(b.name));
     setSortedTasks(sorted);
   };
 
-  useEffect(() => {
-    sortTasks();
-  }, [tasks]);
-
   const handleTaskToggle = (index) => {
-    const updatedTasks = [...tasks];
+    const updatedTasks = [...sortedTasks];
     updatedTasks[index].completed = !updatedTasks[index].completed;
-    setTasks(updatedTasks);
+    setSortedTasks(updatedTasks);
   };
 
   const handleTaskDelete = (index) => {
-    const updatedTasks = [...tasks];
+    const updatedTasks = [...sortedTasks];
     updatedTasks.splice(index, 1);
     setTasks(updatedTasks);
   };
