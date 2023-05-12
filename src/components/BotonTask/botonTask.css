@@ -1,5 +1,10 @@
 .btnnewTask {
     width: 22%;
-    background-color: slategray;
- margin-left: 5px;
+    background-image: linear-gradient(to right, #5acf59, #228b22);
+    box-shadow: 2px 2px #207521;
+    margin-left: 5px;
+}
+
+.btnnewTask:hover {
+    background-image: linear-gradient(to right, #34b433, #207521);
 }

@@ -41,8 +41,8 @@ function NewList(props) {
   };
 
   return (
-    <section className="card">
-      <h3>{props.title}</h3>
+    <section className="cardTask">
+      <h3 className="taskname">{props.title}</h3>
       <div className="newTask">
         <form onSubmit={handleSubmit} className="formulario">
           <input
@@ -54,14 +54,13 @@ function NewList(props) {
             onChange={handleInputChange}
           />
           <BotonTask />
-          {/* <button type="submit">Add Task</button> */}
         </form>
       </div>
 
       <ul>
         {sortedTasks.map((task, index) => (
           <li key={index} className={task.completed ? "completed" : ""}>
-            <span onClick={() => handleTaskToggle(index)}>{task.name}</span>
+            <span onClick={() => handleTaskToggle(index)}>•{task.name}</span>
             <button className="delete" onClick={() => handleTaskDelete(index)}>
               x
             </button>
