@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./cardList.css";
 import NewList from "../NewList/newList";
+import BotonList from "../BotonList/botonList";
 
 function CardList() {
   const [lists, setLists] = useState([]);
@@ -36,7 +37,8 @@ function CardList() {
           value={newList}
           onChange={handleInputChange}
         />
-        <button className="btnnewList">New List</button>
+        {/* <button className="btnnewList">New List</button> */}
+        <BotonList />
       </form>
       <ul className="cardsList">
         {lists.map((list, index) => (
@@ -53,7 +55,3 @@ function CardList() {
 }
 
 export default CardList;
-
-
-
-
