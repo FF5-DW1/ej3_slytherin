@@ -5,7 +5,7 @@ Es una simple aplicacion de To-do creada con React. Te permite crear, manejar y 
 ## Instalación
 
 1. Clona el repositorio a tu maquina local con el siguiente comando:
-**git clone https://github.com**
+**git clone git@github.com:FF5-DW1/ej3_slytherin.git**
 2. Navega al directorio del proyecto:
 **cd tu-repositorio**
 3. Instala las dependencias correpondientes:
