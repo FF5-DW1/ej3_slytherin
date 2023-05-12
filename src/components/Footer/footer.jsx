@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="copyright">
-        © 2023 Copyright :
+        <a>© 2023 Copyright :</a>
         <a href="https://www.linkedin.com/in/victor-wdfs/" target="_blank">
           @Víctor Moreno García
         </a>
@@ -14,7 +14,7 @@ const Footer = () => {
           href="https://www.linkedin.com/in/anderson-almendarez/"
           target="_blank"
         >
-          @Anderson Adonay Almendarez Guzmán
+          Anderson Adonay Almendarez Guzmán
         </a>
         <a
           href="https://www.linkedin.com/in/ivon-madrid-277b02ba/"

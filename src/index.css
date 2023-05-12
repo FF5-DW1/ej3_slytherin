@@ -20,14 +20,13 @@
 
 body {
     margin: 0;
-    display: flex;
     place-items: center;
     min-width: 320px;
     min-height: 100vh;
     background-image: url(/src/assets/img/fondo.jpg);
     background-size: 80%;
-    flex-direction: column;
-    justify-content: flex-start;
+    position: relative;
+    padding-bottom: 3em;
 }
 
 h1 {
