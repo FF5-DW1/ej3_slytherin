@@ -49,7 +49,7 @@ li {
   padding-block: 2px;
 }
 
-.completed span {
+.completed{
   text-decoration: line-through;
-  background-color: rgb(194, 114, 130);
+  /* background-color: rgb(194, 114, 130); */
 }

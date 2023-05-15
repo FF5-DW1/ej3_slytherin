@@ -5,6 +5,7 @@ import NewList from "../NewList/newList";
 function CardList() {
   const [lists, setLists] = useState([]);
   const [newList, setNewList] = useState("");
+  
 
   const handleInputChange = (e) => {
     setNewList(e.target.value);
@@ -17,6 +18,7 @@ function CardList() {
       setNewList("");
     }
   };
+
 
   return (
     <section className="card">
